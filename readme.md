@@ -1,6 +1,8 @@
 
 Build a deep learning model using Keras and Tensorflow to predict the onset of diabetes using the famous Pima Indians Diabetes dataset.
 
+Based on this blog post [https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/] by Json Brownlee.
+
 A copy of the dataset is included. Need to install the following libraries at the command prompt in Vienna command window:
 
 - conda install keras
