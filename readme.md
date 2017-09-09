@@ -14,5 +14,5 @@ Run the code and create the model file. Then download the model and enter the fo
 
 c:\<folderName>az ml service create realtime -f scoring.py -m my_model.h5 -n kerasdiab1 -r python -p requirements.txt
 
-c:\<folderName>az ml service run realtime -i <sevice id> --% -d "1.,85.,66.,29.,0.,26.6,0.351,31."
+c:\<folderName>az ml service run realtime -i <sevice id> -d "1.,85.,66.,29.,0.,26.6,0.351,31."
 
