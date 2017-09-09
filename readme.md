@@ -1,16 +1,18 @@
 
 Build a deep learning model using Keras and Tensorflow to predict the onset of diabetes using the famous Pima Indians Diabetes dataset.
 
-Based on this blog post [https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/] by Json Brownlee.
+This is based on a blog post [https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/] by Json Brownlee.
 
-A copy of the dataset is included. Need to install the following libraries at the command prompt in Vienna command window:
+A copy of the dataset is included. 
+
+Install the following libraries at the command prompt in the Workbench command window:
 
 - conda install keras
 - conda install tensorflow
 
 Run the code and create the model file. Then download the model and enter the following command to deploy to ACS or locally.
 
-c:\<folderName>az ml service create realtime -f scoring.py -m my_model.h5 -n kerasdiab1 -r scikit-py -p requirements.txt
+c:\<folderName>az ml service create realtime -f scoring.py -m my_model.h5 -n kerasdiab1 -r python -p requirements.txt
 
-c:\<folderName>az ml service run realtime -n kerasdiab2 --% -d "1.,85.,66.,29.,0.,26.6,0.351,31."
+c:\<folderName>az ml service run realtime -i <sevice id> --% -d "1.,85.,66.,29.,0.,26.6,0.351,31."
 
